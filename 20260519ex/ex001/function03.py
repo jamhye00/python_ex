@@ -293,7 +293,7 @@ def inputUserInfo():
     inputUserId = input('ID: ')
     inputUserPw = input('Pw: ')
 
-    if inputUserId == userInfos[inputUserId]['userId'] and inputUserPw == userInfos[inputUserId]['userPw']:
+    if inputUserId == userInfos[inputUserId]['uId'] and inputUserPw == userInfos[inputUserId]['uPw']:
         print('성공!')
         return inputUserId
 
@@ -312,13 +312,13 @@ while flag:
         userPhone = input('Phone: ')
 
         userInfos[userId] = {
-            'userId': userId,
-            'userPw': userPw,
-            'userEmail': userEmail,
-            'userPhone': userPhone
+            'uId': userId,
+            'uPw': userPw,
+            'uEmail': userEmail,
+            'uPhone': userPhone
         }
 
-        print('회원가입 성공!')
+        print('회원가입 되었습니다!')
         
     elif SelectedMenuNum == 2:
         inputUserInfo()
