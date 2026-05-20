@@ -293,6 +293,8 @@ def inputUserInfo():
     inputUserId = input('ID: ')
     inputUserPw = input('Pw: ')
 
+    
+
     if inputUserId == userInfos[inputUserId]['uId'] and inputUserPw == userInfos[inputUserId]['uPw']:
         print('성공!')
         return inputUserId
