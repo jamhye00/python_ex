@@ -1,16 +1,15 @@
 from datetime import datetime
-print(datetime.today())
 
 diaryList = {}
 membersDB = {}
 loginUser = ''
-today = datetime.today().strftime('%Y-%m-%d')
 
 
 while True:
     menu = int(input('1.일기쓰기    2.일기보기    3.종료    4.회원가입    5.로그인'))
 
     if menu == 1:
+        today = datetime.today().strftime('%Y-%m-%d')
         diaryText = input('일기 입력: ')
 
         if loginUser != '':
@@ -20,8 +19,11 @@ while True:
             print('로그인이 되어있지 않아 일기 내용이 저장되지 않습니다')
 
     elif menu == 2:
-        for idx, i in enumerate(diaryList[loginUser]):
-            print(f'{idx+1}: {i}')
+        if loginUser == '':
+            print('로그인 먼저 해주세요')
+        else:
+            for idx, i in enumerate(diaryList[loginUser]):
+                print(f'{idx+1}: {i}')
 
     elif menu == 3:
         print('종료합니다')
