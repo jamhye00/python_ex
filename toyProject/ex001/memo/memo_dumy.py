@@ -1,0 +1,5 @@
+name = ['홍길동', '박찬호', '박세리']
+ids = ['gildong', 'chanho', 'saeri']
+pws = ['1234', '5678', '0000']
+mails = ['gildong@gmail.com', 'chanho@naver.com', 'saeri@daum.net']
+phones = ['010-1234-5678', '010-9012-3456', '010-1111-2222']
